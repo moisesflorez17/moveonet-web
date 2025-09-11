@@ -14,7 +14,7 @@
   border-bottom:1px solid rgba(255,255,255,.06);
 }
 .headerContent{
-  max-width:1200px; margin:0 auto; padding:14px 16px;
+  max-width:1200px; margin:0 auto; padding:8px 16px;
   display:flex; align-items:center; gap:12px;
 }
 .logoLink{ display:inline-flex; align-items:center; }
