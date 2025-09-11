@@ -11,7 +11,7 @@ export default function Home() {
           backgroundPosition: "center",
         }}
       />
-      {/* Textura de fibras encima */}
+      {/* Textura de fibras */}
       <div
         aria-hidden
         className="absolute inset-0 -z-20"
@@ -23,7 +23,7 @@ export default function Home() {
           opacity: 0.4,
         }}
       />
-      {/* Overlay sombrío azulado para legibilidad */}
+      {/* Overlay sombrío */}
       <div
         aria-hidden
         className="absolute inset-0 -z-10"
