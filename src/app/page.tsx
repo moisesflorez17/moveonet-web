@@ -11,8 +11,8 @@ export default function Home() {
             <Image
               src="/logo-moveonet-dark.png"
               alt="Logo Moveo Net SAS"
-              width={160}
-              height={40}
+              width={220} // ¡Aumentamos el ancho!
+              height={55} // ¡Aumentamos la altura!
               priority
               className={styles.logoImage}
             />
@@ -27,6 +27,7 @@ export default function Home() {
       </header>
 
       {/* HERO SECTION */}
+      {/* ... el resto de tu código de hero y contacto permanece igual ... */}
       <section id="top" className={styles.hero}>
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
@@ -46,7 +47,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACTO SECTION */}
       <section id="contacto" className={styles.contactSection}>
         <div className={styles.contactContent}>
           <h2 className={styles.contactTitle}>Contacto</h2>
