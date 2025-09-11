@@ -37,8 +37,8 @@
 .logoImage {
   filter: brightness(0) invert(1);
   object-fit: contain;
-  width: 160px;
-  height: 40px;
+  width: 300px;  /* <--- ¡DIMENSIONES GRANDES Y FIJAS AQUI! */
+  height: 75px; /* <--- ¡PARA EVITAR EL SALTO! */
 }
 
 .nav {
@@ -85,8 +85,8 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  background-image: url('/concert-night-bg.jpg'); /* FONDO DEL CONCIERTO */
-  /* background-image: url('/fibers-bg.png'); */ /* DESCOMENTA ESTA LÍNEA Y COMENTA LA ANTERIOR PARA USAR EL FONDO DE FIBRAS */
+  background-image: url('/concert-night-bg.jpg');
+  /* background-image: url('/fibers-bg.png'); */ /* Descomenta esta línea y comenta la anterior para usar el fondo de fibras */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
