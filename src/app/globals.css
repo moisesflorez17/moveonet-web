@@ -2,9 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Reset simple para ocupar toda la pantalla */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+/* Prueba visible para confirmar que SÍ se carga este CSS */
+:root { outline: 4px solid magenta !important; }
