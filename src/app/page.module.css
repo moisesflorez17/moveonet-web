@@ -1,6 +1,6 @@
-/* ===== Reset mínimo para este módulo ===== */
-:where(*) { box-sizing: border-box; }
-:where(img,svg,video,canvas) { display:block; max-width:100%; }
+/* ===== Reset global SOLO dentro de este módulo ===== */
+:global(:where(*)) { box-sizing: border-box; }
+:global(:where(img,svg,video,canvas)) { display:block; max-width:100%; }
 
 /* ===== Layout base ===== */
 .main{
@@ -22,7 +22,7 @@
   display:flex; align-items:center; gap:12px;
 }
 .logoLink{ display:inline-flex; align-items:center; }
-.logoImage{ width:128px; height:auto; }    /* 👈 tamaño fijo del logo */
+.logoImage{ width:128px; height:auto; }    /* tamaño fijo del logo */
 
 /* Nav escritorio */
 .navDesktop{ margin-left:auto; display:none; align-items:center; gap:28px; }
@@ -70,7 +70,7 @@
 }
 .hero::before{
   content:""; position:absolute; inset:0; z-index:-2;
-  background-image:url('/concert-night-bg.jpg');       /* 👈 en /public */
+  background-image:url('/concert-night-bg.jpg'); /* en /public */
   background-size:cover; background-position:center;
   filter:saturate(105%) contrast(105%);
 }
