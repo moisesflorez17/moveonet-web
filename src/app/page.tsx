@@ -1,27 +1,36 @@
 import Image from 'next/image';
-import styles from './page.module.css';
+import styles from './page.module.css'; // Asegúrate de que este archivo exista
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      {/* HEADER */}
       <header className={styles.header}>
-        {/* Aquí va el logo de Moveo Net SAS */}
-        <div className={styles.logo}>
-          <Image
-            src="/logo-moveonet-dark.png"
-            alt="Logo Moveo Net SAS"
-            width={150}
-            height={50}
-            priority
-          />
+        <div className={styles.headerContent}>
+          <a href="#top" className={styles.logoLink}>
+            <Image
+              src="/moveo-logo.png" // O "/logo-moveonet-dark.png" si es el que usas
+              alt="Logo Moveo Net SAS"
+              width={160} // Ajusta el ancho para que no se aplaste
+              height={40} // Ajusta la altura
+              priority
+              className={styles.logoImage} // Clase para aplicar el filtro si es necesario
+            />
+            {/* Si quieres el texto "moveo net sas" junto al logo, puedes añadirlo aquí */}
+            {/* <span className={styles.logoText}>moveo net sas</span> */}
+          </a>
+
+          <nav className={styles.nav}>
+            <a href="#servicios" className={styles.navLink}>Servicios</a>
+            <a href="#contacto" className={styles.navLink}>Contacto</a>
+            <button className={styles.cotizarBtn}>Cotizar ahora</button>
+          </nav>
         </div>
-        <nav className={styles.nav}>
-          <a href="#">Servicios</a>
-          <a href="#">Contacto</a>
-          <button className={styles.cotizarBtn}>Cotizar ahora</button>
-        </nav>
       </header>
-      <section className={styles.hero}>
+
+      {/* HERO SECTION */}
+      <section id="top" className={styles.hero}>
+        <div className={styles.heroOverlay}></div> {/* Overlay para el fondo */}
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>
             Internet dedicado para eventos, conciertos, hoteles, torres residenciales y más
@@ -31,11 +40,23 @@ export default function Home() {
             eventos, conciertos, hoteles, edificios de oficinas, conjuntos residenciales e internet
             satelital.
           </p>
-          <ul className={styles.heroList}>
-            <li>✓ Redes GPON</li>
-            <li>✓ Wi-Fi de alta densidad</li>
-            <li>✓ Radioenlaces y respaldo satelital</li>
+          <ul id="servicios" className={styles.heroList}>
+            <li><span>✓</span><span>Redes GPON</span></li>
+            <li><span>✓</span><span>Wi-Fi de alta densidad</span></li>
+            <li><span>✓</span><span>Radioenlaces y respaldo satelital</span></li>
           </ul>
+        </div>
+      </section>
+
+      {/* CONTACTO SECTION (opcional, puedes moverla a otro lado o estilarla) */}
+      <section id="contacto" className={styles.contactSection}>
+        <div className={styles.contactContent}>
+          <h2 className={styles.contactTitle}>Contacto</h2>
+          <p className={styles.contactDescription}>Escríbenos y te respondemos de inmediato.</p>
+          <div className={styles.contactDetails}>
+            <a href="mailto:intermoveonetgmail.com" className={styles.contactLink}>intermoveonetgmail.com</a>
+            <a href="tel:+573175021246" className={styles.contactLink}>+57 317 502 1246</a>
+          </div>
         </div>
       </section>
     </main>
