@@ -1,30 +1,50 @@
 export default function Home() {
   return (
     <main className="relative min-h-screen text-white">
-      {/* Fondo concierto + fibras + overlay sombrío */}
-      <div aria-hidden className="absolute inset-0 -z-30 bg-[url('/concert-night-bg.jpg')] bg-cover bg-center" />
-      <div aria-hidden className="absolute inset-0 -z-20 bg-[url('/fibers-bg.png')] bg-cover bg-right opacity-40" />
-      <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-b from-black/85 via-[#0a2a4a]/55 to-black/90" />
+      {/* Fondo concierto con style (seguro) */}
+      <div
+        aria-hidden
+        className="absolute inset-0 -z-30"
+        style={{
+          backgroundImage: "url('/concert-night-bg.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+      {/* Textura de fibras encima */}
+      <div
+        aria-hidden
+        className="absolute inset-0 -z-20"
+        style={{
+          backgroundImage: "url('/fibers-bg.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "right center",
+          backgroundRepeat: "no-repeat",
+          opacity: 0.4,
+        }}
+      />
+      {/* Overlay sombrío azulado para legibilidad */}
+      <div
+        aria-hidden
+        className="absolute inset-0 -z-10"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(0,0,0,.85), rgba(10,42,74,.55), rgba(0,0,0,.9))",
+        }}
+      />
 
       {/* Header */}
       <header className="fixed top-0 inset-x-0 z-40 bg-[#0a2a4a]/70 backdrop-blur border-b border-white/10">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4">
           <a href="#top" className="flex items-center gap-3">
-            <img
-              src="/logo-moveonet-dark.png"
-              alt="Moveo Net SAS"
-              className="w-9 h-9 object-contain"
-            />
+            <img src="/logo-moveonet-dark.png" alt="Moveo Net SAS" className="w-9 h-9 object-contain" />
             <span className="font-semibold text-white text-lg">Moveo Net SAS</span>
           </a>
           <nav className="ml-auto hidden md:flex items-center gap-6 text-sm text-white/90">
             <a href="#servicios" className="hover:text-white">Servicios</a>
             <a href="#contacto" className="hover:text-white">Contacto</a>
           </nav>
-          <a
-            href="#contacto"
-            className="ml-3 inline-flex items-center px-4 py-2 rounded-xl bg-sky-700 text-white text-sm hover:bg-sky-800"
-          >
+          <a href="#contacto" className="ml-3 inline-flex items-center px-4 py-2 rounded-xl bg-sky-700 text-white text-sm hover:bg-sky-800">
             Cotizar ahora
           </a>
         </div>
@@ -44,25 +64,16 @@ export default function Home() {
         </p>
 
         <ul id="servicios" className="mt-6 space-y-2 text-white/95">
-          <li className="flex items-start gap-3">
-            <span className="mt-1">✓</span><span>Redes GPON</span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1">✓</span><span>Wi-Fi de alta densidad</span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1">✓</span><span>Radioenlaces y respaldo satelital</span>
-          </li>
+          <li className="flex items-start gap-3"><span className="mt-1">✓</span><span>Redes GPON</span></li>
+          <li className="flex items-start gap-3"><span className="mt-1">✓</span><span>Wi-Fi de alta densidad</span></li>
+          <li className="flex items-start gap-3"><span className="mt-1">✓</span><span>Radioenlaces y respaldo satelital</span></li>
         </ul>
 
         <div className="mt-8 flex flex-wrap gap-3">
           <a href="#contacto" className="inline-flex items-center px-5 py-2.5 rounded-xl bg-sky-700 hover:bg-sky-800">
             Solicitar cotización
           </a>
-          <a
-            href="https://wa.me/573175021246"
-            className="inline-flex items-center px-5 py-2.5 rounded-xl border border-white/30 hover:bg-white/10"
-          >
+          <a href="https://wa.me/573175021246" className="inline-flex items-center px-5 py-2.5 rounded-xl border border-white/30 hover:bg-white/10">
             WhatsApp
           </a>
         </div>
