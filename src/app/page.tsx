@@ -9,10 +9,10 @@ export default function Home() {
         <div className={styles.headerContent}>
           <a href="#top" className={styles.logoLink}>
             <Image
-              src="/logo-moveonet-dark.png"
+              src="/logo-moveonet-dark.png" // <--- ¡Cambiado a tu logo GRANDE!
               alt="Logo Moveo Net SAS"
-              width={160}
-              height={40}
+              width={300} // <--- ¡Dimensiones más grandes para este logo!
+              height={75} // <--- ¡Dimensiones más grandes para este logo!
               priority
               className={styles.logoImage}
             />
@@ -42,6 +42,7 @@ export default function Home() {
             <li><span>✓</span><span>Redes GPON</span></li>
             <li><span>✓</span><span>Wi-Fi de alta densidad</span></li>
             <li><span>✓</span><span>Radioenlaces y respaldo satelital</span></li>
+          </li>
           </ul>
         </div>
       </section>
