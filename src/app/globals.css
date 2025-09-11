@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Reset global seguro */
+* { box-sizing: border-box; }
+img, svg, video, canvas { display: block; max-width: 100%; }
 
 /* Prueba visible para confirmar que SÍ se carga este CSS */
 :root { outline: 4px solid magenta !important; }
