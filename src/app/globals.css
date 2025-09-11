@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* NO pongas fondo aquí; que sea transparente */
 html, body, #__next {
   height: 100%;
-  background: transparent;
 }
