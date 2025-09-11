@@ -14,13 +14,13 @@
   border-bottom:1px solid rgba(255,255,255,.06);
 }
 .headerContent{
-  max-width:1200px; margin:0 auto; padding:8px 16px;
+  max-width:1200px; margin:0 auto; padding:8px 16px !important;
   display:flex; align-items:center; gap:12px;
 }
 .logoLink{ display:inline-flex; align-items:center; }
 .logoImage{
   width:128px; height:auto;
-  filter: brightness(2.0);
+  filter: brightness(3.0);
 }
 
 /* Nav escritorio */
