@@ -1,18 +1,20 @@
 export default function Home() {
   return (
-    <main className="pt-20 min-h-screen text-white relative">
-      {/* Fondo concierto nocturno */}
+    <main className="relative min-h-screen text-white">
+      {/* Fondo concierto + fibras + overlay sombrío */}
       <div aria-hidden className="absolute inset-0 -z-30 bg-[url('/concert-night-bg.jpg')] bg-cover bg-center" />
-      {/* Textura de fibras */}
       <div aria-hidden className="absolute inset-0 -z-20 bg-[url('/fibers-bg.png')] bg-cover bg-right opacity-40" />
-      {/* Overlay sombrío azulado (legibilidad tipo Starlink) */}
       <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-b from-black/85 via-[#0a2a4a]/55 to-black/90" />
 
-      {/* Header fijo */}
+      {/* Header */}
       <header className="fixed top-0 inset-x-0 z-40 bg-[#0a2a4a]/70 backdrop-blur border-b border-white/10">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4">
           <a href="#top" className="flex items-center gap-3">
-            <img src="/logo-moveonet-dark.png" alt="Moveo Net SAS" className="w-8 h-8 object-contain" />
+            <img
+              src="/logo-moveonet-dark.png"
+              alt="Moveo Net SAS"
+              className="w-9 h-9 object-contain"
+            />
             <span className="font-semibold text-white text-lg">Moveo Net SAS</span>
           </a>
           <nav className="ml-auto hidden md:flex items-center gap-6 text-sm text-white/90">
@@ -29,30 +31,27 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section id="top" className="relative max-w-6xl mx-auto px-4 pt-24 pb-16 text-left">
+      <section id="top" className="relative max-w-6xl mx-auto px-4 pt-28 pb-16 text-left">
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-          Internet dedicado para<br className="md:hidden" />
-          eventos, conciertos, hoteles,<br className="hidden md:block" />
+          Internet dedicado para eventos, conciertos, hoteles,
+          <br className="hidden md:block" />
           torres residenciales y más
         </h1>
 
         <p className="mt-5 max-w-3xl text-lg md:text-xl text-white/90">
-          Ofrecemos soluciones de internet por fibra óptica. Especialistas en redes GPON para eventos, conciertos,
-          hoteles, edificios de oficinas, conjuntos residenciales e internet satelital.
+          Ofrecemos soluciones de internet por fibra óptica. Especialistas en redes GPON para
+          eventos, conciertos, hoteles, edificios de oficinas, conjuntos residenciales e internet satelital.
         </p>
 
         <ul id="servicios" className="mt-6 space-y-2 text-white/95">
           <li className="flex items-start gap-3">
-            <span className="mt-1">✓</span>
-            <span>Redes GPON</span>
+            <span className="mt-1">✓</span><span>Redes GPON</span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="mt-1">✓</span>
-            <span>Wi-Fi de alta densidad</span>
+            <span className="mt-1">✓</span><span>Wi-Fi de alta densidad</span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="mt-1">✓</span>
-            <span>Radioenlaces y respaldo satelital</span>
+            <span className="mt-1">✓</span><span>Radioenlaces y respaldo satelital</span>
           </li>
         </ul>
 
@@ -69,10 +68,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contacto (placeholder corto) */}
+      {/* Contacto */}
       <section id="contacto" className="max-w-6xl mx-auto px-4 pb-20">
         <h2 className="text-2xl md:text-3xl font-bold mb-2">Contacto</h2>
         <p className="text-white/80">Escríbenos y te respondemos de inmediato.</p>
+        <div className="mt-4 grid sm:grid-cols-2 gap-3 text-white/90">
+          <a href="mailto:intermoveonet@gmail.com" className="underline">intermoveonet@gmail.com</a>
+          <a href="tel:+573175021246" className="underline">+57 317 502 1246</a>
+        </div>
       </section>
     </main>
   );
