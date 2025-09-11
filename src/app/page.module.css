@@ -18,7 +18,7 @@
   display:flex; align-items:center; gap:12px;
 }
 .logoLink{ display:inline-flex; align-items:center; }
-.logoImage{ width:128px; height:auto; filter: brightness(1.2); }
+.logoImage{ width:128px; height:auto; filter: brightness(1.4); }
 
 /* Nav escritorio */
 .navDesktop{ margin-left:auto; display:none; align-items:center; gap:28px; }
