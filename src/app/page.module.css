@@ -20,7 +20,7 @@
 .logoLink{ display:inline-flex; align-items:center; }
 .logoImage{
   width:128px; height:auto;
-  filter: brightness(1.2);
+  filter: brightness(1.8);
 }
 
 /* Nav escritorio */
