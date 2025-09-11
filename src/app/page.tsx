@@ -1,18 +1,18 @@
 export default function Home() {
   return (
     <main className="relative min-h-screen text-white">
-      {/* Fondo concierto (queda encima del body) */}
+      {/* Fondo concierto visible */}
       <div
         aria-hidden
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('/concert-night-bg.jpg?v=7')",
+          backgroundImage: "url('/concert-night-bg.jpg?v=8')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       />
-      {/* Overlay azul/negro para legibilidad */}
+      {/* Overlay para legibilidad */}
       <div
         aria-hidden
         className="absolute inset-0 z-0"
@@ -22,12 +22,12 @@ export default function Home() {
         }}
       />
 
-      {/* HEADER (banner superior) */}
+      {/* HEADER */}
       <header className="fixed top-0 inset-x-0 z-40 bg-[#0a2a4a]/70 backdrop-blur border-b border-white/10">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4">
           <a href="#top" className="flex items-center gap-3">
             <img
-              src="/logo-moveonet-dark.png?v=7"
+              src="/logo-moveonet-dark.png?v=8"
               alt="Moveo Net SAS"
               className="h-9 w-auto object-contain"
             />
@@ -46,9 +46,8 @@ export default function Home() {
         </div>
       </header>
 
-      {/* CONTENIDO (encima del fondo) */}
+      {/* CONTENIDO */}
       <div className="relative z-10">
-        {/* HERO */}
         <section id="top" className="max-w-6xl mx-auto px-4 pt-32 pb-16 md:pt-36 text-left">
           <h1 className="max-w-5xl text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight">
             Internet dedicado para eventos, conciertos, hoteles,
@@ -77,7 +76,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CONTACTO */}
         <section id="contacto" className="max-w-6xl mx-auto px-4 pb-24">
           <h2 className="text-2xl md:text-3xl font-bold mb-2">Contacto</h2>
           <p className="text-white/80">Escríbenos y te respondemos de inmediato.</p>
