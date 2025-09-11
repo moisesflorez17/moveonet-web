@@ -20,7 +20,7 @@
 .logoLink{ display:inline-flex; align-items:center; }
 .logoImage{
   width:128px; height:auto;
-  filter: brightness(1.8);
+  filter: brightness(1.2);
 }
 
 /* Nav escritorio */
@@ -69,7 +69,7 @@
 }
 .hero::before{
   content:""; position:absolute; inset:0; z-index:-2;
-  background-image:url('/concert-night-bg.jpg'); /* en /public */
+  background-image:url('/concert-night-bg.jpg');
   background-size:cover; background-position:center;
   filter:saturate(105%) contrast(105%);
 }
