@@ -31,20 +31,49 @@ export default function ServiciosPage() {
       <section className={styles.hero}>
         <div className={styles.heroOverlay} />
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Nuestros Servicios</h1>
+          <h1 className={styles.heroTitle}>Nuestros Servicios de Conectividad</h1>
           <p className={styles.heroDescription}>
-            Ofrecemos soluciones tecnológicas avanzadas para conectar tu negocio y hogar.
+            En Moveonet, diseñamos e implementamos soluciones de conectividad robustas y escalables para empresas, eventos y el sector inmobiliario. Nos especializamos en redes de alta velocidad, garantizando una conexión fiable y segura en todo momento.
           </p>
-          {/* Aquí puedes añadir más contenido sobre los servicios */}
+          
           <ul className={styles.heroList}>
-            <li><span>✓</span><span>Internet Dedicado</span></li>
-            <li><span>✓</span><span>Redes GPON</span></li>
-            <li><span>✓</span><span>Wi-Fi de Alta Densidad</span></li>
+            <li>
+              <span>✓</span>
+              <span>
+                **Redes de Fibra Óptica GPON**
+                <br />
+                Somos expertos en el diseño e instalación de **redes GPON** (Gigabit Passive Optical Network). Esta tecnología de fibra óptica es ideal para proporcionar servicios de internet, voz y video con velocidades simétricas y gran estabilidad, perfecta para la **red troncal de hoteles, edificios de oficinas y conjuntos residenciales**.
+              </span>
+            </li>
+            <li>
+              <span>✓</span>
+              <span>
+                **Conectividad Temporal para Eventos**
+                <br />
+                Ofrecemos soluciones de internet dedicadas y de alta densidad para **eventos, conciertos, conferencias y ferias**. Nos encargamos de toda la instalación, garantizando una conexión estable y de alto rendimiento que soporta la gran afluencia de usuarios, permitiendo la transmisión en vivo y el uso de múltiples dispositivos sin interrupciones.
+              </span>
+            </li>
+            <li>
+              <span>✓</span>
+              <span>
+                **Soluciones de Conectividad para Infraestructura**
+                <br />
+                Desarrollamos proyectos a medida para dotar de internet de alta velocidad a **hoteles, torres de apartamentos, edificios de oficinas y conjuntos residenciales**. Nuestra experiencia nos permite implementar redes seguras y estables que aumentan la plusvalía de las propiedades y mejoran la experiencia de sus residentes y usuarios.
+              </span>
+            </li>
+            <li>
+              <span>✓</span>
+              <span>
+                **Interconexión de Oficinas y Puntos de Venta**
+                <br />
+                Creamos redes privadas y seguras para conectar múltiples sedes, oficinas remotas o puntos de venta de una misma empresa. Mediante **radioenlaces, fibra óptica o soluciones VPN**, garantizamos una comunicación fluida y segura entre todas tus ubicaciones, facilitando el intercambio de información y la gestión centralizada de recursos.
+              </span>
+            </li>
           </ul>
         </div>
       </section>
 
-      {/* FOOTER o sección de contacto (opcional, si lo quieres repetir) */}
+      {/* FOOTER - Puedes agregar el pie de página aquí si es necesario */}
     </main>
   );
 }
