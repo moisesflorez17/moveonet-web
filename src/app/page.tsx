@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './page.module.css'; // Asegúrate de que este archivo exista
+import styles from './page.module.css';
 
 export default function Home() {
   return (
@@ -9,15 +9,13 @@ export default function Home() {
         <div className={styles.headerContent}>
           <a href="#top" className={styles.logoLink}>
             <Image
-              src="/moveo-logo.png" // O "/logo-moveonet-dark.png" si es el que usas
+              src="/logo-moveonet-dark.png"
               alt="Logo Moveo Net SAS"
-              width={160} // Ajusta el ancho para que no se aplaste
-              height={40} // Ajusta la altura
+              width={160}
+              height={40}
               priority
-              className={styles.logoImage} // Clase para aplicar el filtro si es necesario
+              className={styles.logoImage}
             />
-            {/* Si quieres el texto "moveo net sas" junto al logo, puedes añadirlo aquí */}
-            {/* <span className={styles.logoText}>moveo net sas</span> */}
           </a>
 
           <nav className={styles.nav}>
@@ -30,7 +28,7 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <section id="top" className={styles.hero}>
-        <div className={styles.heroOverlay}></div> {/* Overlay para el fondo */}
+        <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>
             Internet dedicado para eventos, conciertos, hoteles, torres residenciales y más
@@ -38,7 +36,7 @@ export default function Home() {
           <p className={styles.heroDescription}>
             Ofrecemos soluciones de internet por fibra óptica. Especialistas en redes GPON para
             eventos, conciertos, hoteles, edificios de oficinas, conjuntos residenciales e internet
-            satelital.
+            satalelital.
           </p>
           <ul id="servicios" className={styles.heroList}>
             <li><span>✓</span><span>Redes GPON</span></li>
@@ -48,13 +46,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACTO SECTION (opcional, puedes moverla a otro lado o estilarla) */}
+      {/* CONTACTO SECTION */}
       <section id="contacto" className={styles.contactSection}>
         <div className={styles.contactContent}>
           <h2 className={styles.contactTitle}>Contacto</h2>
           <p className={styles.contactDescription}>Escríbenos y te respondemos de inmediato.</p>
           <div className={styles.contactDetails}>
-            <a href="mailto:intermoveonetgmail.com" className={styles.contactLink}>intermoveonetgmail.com</a>
+            <a href="mailto:intermoveonet@gmail.com" className={styles.contactLink}>intermoveonet@gmail.com</a>
             <a href="tel:+573175021246" className={styles.contactLink}>+57 317 502 1246</a>
           </div>
         </div>
