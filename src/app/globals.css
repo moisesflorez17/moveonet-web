@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #__next {
+/* Reset simple para ocupar toda la pantalla */
+html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
