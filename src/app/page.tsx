@@ -1,22 +1,23 @@
 export default function Home() {
   return (
     <main className="relative min-h-screen text-white overflow-hidden">
-      {/* FONDO: fijo y detrás de todo */}
+      {/* FONDO: foto del concierto */}
       <div
         className="fixed inset-0 -z-10"
         style={{
-          backgroundImage: "url('/concert-night-bg.jpg?v=3')",
+          backgroundImage: "url('/concert-night-bg.jpg?v=4')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       />
 
-      {/* Overlay suave para legibilidad */}
-      <div className="fixed inset-0 -z-9"
+      {/* Overlay para legibilidad */}
+      <div
+        className="fixed inset-0 -z-9"
         style={{
           background:
-            "linear-gradient(to bottom, rgba(0,0,0,.8), rgba(10,42,74,.4), rgba(0,0,0,.85))",
+            "linear-gradient(to bottom, rgba(0,0,0,.82), rgba(10,42,74,.45), rgba(0,0,0,.9))",
         }}
       />
 
@@ -25,7 +26,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4">
           <a href="#top" className="flex items-center gap-3">
             <img
-              src="/logo-moveonet-dark.png?v=3"
+              src="/logo-moveonet-dark.png?v=4"
               alt="Moveo Net SAS"
               className="h-9 w-auto object-contain"
             />
@@ -84,10 +85,6 @@ export default function Home() {
           <a href="tel:+573175021246" className="underline">+57 317 502 1246</a>
         </div>
       </section>
-    </main>
-  );
-}
-
     </main>
   );
 }
