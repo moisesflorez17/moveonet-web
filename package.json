@@ -11,7 +11,11 @@
   "dependencies": {
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "postcss": "latest",
     "tailwindcss": "latest",
     "typescript": "latest"
   }
