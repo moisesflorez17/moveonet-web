@@ -1,9 +1,12 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import styles from '../page.module.css';
 
 export default function ServiciosPage() {
+  const [open, setOpen] = useState(false);
+
   return (
     <main className={styles.main}>
       {/* HEADER - Reutilizamos el mismo de la página de inicio */}
@@ -19,6 +22,7 @@ export default function ServiciosPage() {
               className={styles.logoImage}
             />
           </a>
+
           <nav className={styles.navDesktop} aria-label="Principal">
             <a href="/servicios" className={styles.navLink}>Servicios</a>
             <a href="/#contacto" className={styles.navLink}>Contacto</a>
@@ -35,7 +39,7 @@ export default function ServiciosPage() {
           <p className={styles.heroDescription}>
             En Moveonet, diseñamos e implementamos soluciones de conectividad robustas y escalables para empresas, eventos y el sector inmobiliario. Nos especializamos en redes de alta velocidad, garantizando una conexión fiable y segura en todo momento.
           </p>
-          
+
           <ul className={styles.heroList}>
             <li>
               <span>✓</span>
@@ -72,8 +76,6 @@ export default function ServiciosPage() {
           </ul>
         </div>
       </section>
-
-      {/* FOOTER - Puedes agregar el pie de página aquí si es necesario */}
     </main>
   );
 }
