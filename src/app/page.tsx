@@ -22,7 +22,7 @@ export default function Home() {
             <Image
               src="/logo-moveonet-dark.png"
               alt="Logo Moveo Net SAS"
-              width={128}
+              width={80}
               height={36}
               priority
               className={styles.logoImage}
@@ -30,7 +30,7 @@ export default function Home() {
           </a>
 
           <nav className={styles.navDesktop} aria-label="Principal">
-            <a href="#servicios" className={styles.navLink}>Servicios</a>
+            <a href="/servicios" className={styles.navLink}>Servicios</a>
             <a href="#contacto" className={styles.navLink}>Contacto</a>
             <a href="https://wa.me/573175021246" className={styles.ctaBtn}>Cotizar ahora</a>
           </nav>
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
         <nav className={`${styles.navMobile} ${open ? styles.navMobileOpen : ''}`} aria-label="Menú móvil">
-          <a href="#servicios" className={styles.navMobileLink}>Servicios</a>
+          <a href="/servicios" className={styles.navMobileLink}>Servicios</a>
           <a href="#contacto" className={styles.navMobileLink}>Contacto</a>
           <a href="https://wa.me/573175021246" className={styles.navMobileCTA}>Cotizar ahora</a>
         </nav>
