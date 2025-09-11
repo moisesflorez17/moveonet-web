@@ -11,8 +11,8 @@ export default function Home() {
             <Image
               src="/logo-moveonet-dark.png"
               alt="Logo Moveo Net SAS"
-              width={220} // ¡Aumentamos el ancho!
-              height={55} // ¡Aumentamos la altura!
+              width={300} // ¡Aumentamos el ancho!
+              height={85} // ¡Aumentamos la altura!
               priority
               className={styles.logoImage}
             />
