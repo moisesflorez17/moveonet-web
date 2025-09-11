@@ -37,6 +37,8 @@
 .logoImage {
   filter: brightness(0) invert(1);
   object-fit: contain;
+  width: 300px;  /* ¡NUEVAS DIMENSIONES FIJAS! */
+  height: 85px; /* ¡PARA EVITAR EL SALTO! */
 }
 
 .nav {
