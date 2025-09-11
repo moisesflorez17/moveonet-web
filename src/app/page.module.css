@@ -19,7 +19,7 @@
 }
 .logoLink{ display:inline-flex; align-items:center; }
 .logoImage{
-  width:128px; height:auto;
+  width:100px; height:auto;
   filter: brightness(3.0);
 }
 
