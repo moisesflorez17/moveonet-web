@@ -174,7 +174,7 @@
   text-align: left;
   position: relative;
   z-index: 1;
-  top: -100px; /* <-- Nuevo cambio */
+  top: -100px; /* <-- CAMBIO QUE PUEDE ESTAR CAUSANDO EL PROBLEMA */
 }
 
 .sectionTitle {
@@ -264,7 +264,39 @@
   text-underline-offset: 3px;
 }
 
-/* ===== Breakpoint ===== */
+/* ===== Responsive Design: Ajustes para pantallas pequeñas (móviles) ===== */
+@media (max-width: 767px) {
+  .contentSection {
+    padding-top: 60px;
+    justify-content: flex-start;
+  }
+  
+  .contentWrapper {
+    margin-top: 40px;
+    padding: 24px 16px 40px;
+    top: 0; /* Deshacemos el 'top: -100px' en móviles */
+  }
+
+  .sectionTitle {
+    font-size: clamp(2rem, 8vw, 3rem);
+    text-align: center;
+  }
+  
+  .sectionSubtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .featuresList {
+    align-items: center;
+  }
+  
+  .featuresList li {
+    font-size: 1rem;
+  }
+}
+
+/* ===== Breakpoint: Ajustes para PC ===== */
 @media (min-width:768px) {
   .navDesktop {
     display: flex;
