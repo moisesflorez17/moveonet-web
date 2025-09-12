@@ -52,22 +52,33 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* HERO */}
-      <section id="top" className={styles.hero} aria-label="Presentación">
-        <div className={styles.heroOverlay} />
-        <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>
+      {/* SECCIÓN PRINCIPAL CON IMÁGENES SUPERPUESTAS */}
+      <section id="top" className={styles.contentSection} aria-label="Internet de alta velocidad para eventos y más">
+        {/* Capa de fondo con imagen del concierto */}
+        <div className={styles.backgroundImageBottom} />
+        {/* Capa de fondo con imagen de fibras ópticas */}
+        <div className={styles.backgroundImageTop} />
+        {/* Capa de degradado oscuro */}
+        <div className={styles.contentOverlay} />
+
+        <div className={styles.contentWrapper}>
+          <h1 className={styles.sectionTitle}>
             Internet dedicado para eventos, conciertos, hoteles, torres residenciales y más
           </h1>
-          <p className={styles.heroDescription}>
-            Ofrecemos soluciones de internet por fibra óptica. Especialistas en redes GPON para
-            eventos, conciertos, hoteles, edificios de oficinas, conjuntos residenciales e internet
-            satelital.
+          <p className={styles.sectionSubtitle}>
+            Ofrecemos soluciones de internet por fibra óptica. Especialistas en redes GPON para eventos, concierto, hoteles, edificios de oficinas, conjuntos residenciales e internet satelital.
           </p>
-          <ul id="servicios" className={styles.heroList}>
-            <li><span>✓</span><span>Redes GPON</span></li>
-            <li><span>✓</span><span>Wi-Fi de alta densidad</span></li>
-            <li><span>✓</span><span>Radioenlaces y respaldo satelital</span></li>
+
+          <ul className={styles.featuresList}>
+            <li>
+              <span className={styles.checkIcon}>✓</span> Redes GPON
+            </li>
+            <li>
+              <span className={styles.checkIcon}>✓</span> Wi-Fi de alta densidad
+            </li>
+            <li>
+              <span className={styles.checkIcon}>✓</span> Radioenlaces y respaldo satelital
+            </li>
           </ul>
         </div>
       </section>
