@@ -1,115 +1,280 @@
-/* ===== Layout base ===== */
-.main{
-  min-height:100dvh;
-  color:#eaf2ff;
-  background:#061729;
+.main {
+  min-height: 100vh;
+  color: #eaf2ff;
+  background: #061729;
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
-/* ===== Header ===== */
-.header{
-  position:sticky; top:0; z-index:50;
+/* ===== Header (navegación superior) ===== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
   backdrop-filter: blur(8px);
-  background:linear-gradient(to bottom, rgba(6,23,41,.9), rgba(6,23,41,.65));
-  border-bottom:1px solid rgba(255,255,255,.06);
-}
-.headerContent{
-  max-width:1200px; margin:0 auto; padding:8px 16px !important;
-  display:flex; align-items:center; gap:12px;
-}
-.logoLink{ display:inline-flex; align-items:center; }
-.logoImage{
-  width:100px; height:auto;
-  filter: brightness(3.0);
+  background: linear-gradient(to bottom, rgba(6, 23, 41, .9), rgba(6, 23, 41, .65));
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
 }
 
-/* Nav escritorio */
-.navDesktop{ margin-left:auto; display:none; align-items:center; gap:28px; }
-.navLink{
-  color:#d8e8ff; text-decoration:none; font-size:.95rem; transition:opacity .2s;
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-.navLink:hover{ opacity:.9; }
-.ctaBtn{
-  text-decoration:none; padding:10px 14px; border-radius:12px;
-  background:#0c4a6e; color:#fff; border:1px solid rgba(255,255,255,.12);
+
+.logoLink {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: 80px;
+  height: auto;
+  filter: brightness(1.2);
+}
+
+.navDesktop {
+  margin-left: auto;
+  display: none;
+  align-items: center;
+  gap: 28px;
+}
+
+.navLink {
+  color: #d8e8ff;
+  text-decoration: none;
+  font-size: .95rem;
+  transition: opacity .2s;
+}
+
+.navLink:hover {
+  opacity: .9;
+}
+
+.ctaBtn {
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #0c4a6e;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, .12);
   transition: transform .15s, background .2s;
 }
-.ctaBtn:hover{ background:#0a3e5c; transform:translateY(-1px); }
 
-/* Botón hamburguesa (móvil) */
-.burger{
-  margin-left:auto; display:inline-flex; flex-direction:column; gap:4px;
-  background:transparent; border:0; cursor:pointer; padding:8px;
-}
-.burger span{ width:22px; height:2px; background:#eaf2ff; border-radius:2px; }
-
-/* Menú móvil */
-.navMobile{
-  display:none; flex-direction:column; gap:10px;
-  padding:12px 16px 16px;
-  background:rgba(6,23,41,.95);
-  border-bottom:1px solid rgba(255,255,255,.06);
-}
-.navMobileOpen{ display:flex; }
-.navMobileLink{
-  color:#d8e8ff; text-decoration:none; padding:10px 6px; border-radius:8px;
-}
-.navMobileLink:hover{ background:rgba(255,255,255,.06); }
-.navMobileCTA{
-  text-decoration:none; text-align:center; padding:12px 14px; border-radius:12px;
-  background:#0c4a6e; color:#fff; border:1px solid rgba(255,255,255,.12);
+.ctaBtn:hover {
+  background: #0a3e5c;
+  transform: translateY(-1px);
 }
 
-/* ===== Hero ===== */
-.hero{
-  position:relative; min-height:78dvh;
-  display:grid; place-items:center;
-  overflow:hidden; isolation:isolate;
-  background:#061729;
+.burger {
+  margin-left: auto;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 8px;
 }
-.hero::before{
-  content:""; position:absolute; inset:0; z-index:-2;
-  background-image:url('/concert-night-bg.jpg');
-  background-size:cover; background-position:center;
-  filter:saturate(105%) contrast(105%);
-}
-.heroOverlay{
-  position:absolute; inset:0; z-index:-1;
-  background:
-    radial-gradient(1200px 400px at 10% 10%, rgba(12,57,100,.35), transparent 60%),
-    linear-gradient(to bottom, rgba(2,8,23,.75), rgba(2,8,23,.85));
-}
-.heroContent{ width:100%; max-width:1200px; padding:56px 16px 72px; }
 
-.heroTitle{
-  font-size:clamp(2rem, 4.5vw, 4rem);
-  line-height:1.05; font-weight:800; letter-spacing:-.02em;
-  color:#fff; text-shadow:0 2px 18px rgba(0,0,0,.35);
+.burger span {
+  width: 22px;
+  height: 2px;
+  background: #eaf2ff;
+  border-radius: 2px;
 }
-.heroDescription{
-  margin-top:16px; max-width:900px;
-  font-size:clamp(.98rem, 1.5vw, 1.1rem); color:#cfe3ff;
+
+.navMobile {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 16px 16px;
+  background: rgba(6, 23, 41, .95);
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
 }
-.heroList{
-  margin-top:20px; list-style:none; padding:0; display:grid; gap:10px; color:#eaf2ff;
+
+.navMobileOpen {
+  display: flex;
 }
-.heroList li{ display:flex; align-items:center; gap:10px; }
-.heroList li span:first-child{
-  display:inline-grid; place-items:center; width:22px; height:22px; border-radius:50%;
-  background:rgba(56,189,248,.25); border:1px solid rgba(56,189,248,.45);
+
+.navMobileLink {
+  color: #d8e8ff;
+  text-decoration: none;
+  padding: 10px 6px;
+  border-radius: 8px;
+}
+
+.navMobileLink:hover {
+  background: rgba(255, 255, 255, .06);
+}
+
+.navMobileCTA {
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #0c4a6e;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, .12);
+}
+
+/* ===== Secciones de contenido estilo Starlink ===== */
+.contentSection {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Alinea el contenido a la izquierda */
+  overflow: hidden;
+  isolation: isolate;
+  background: #061729; /* Color de fallback */
+  padding-top: 80px; /* Espacio para el header sticky */
+}
+
+/* Imagen de fondo inferior (concierto) */
+.backgroundImageBottom {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url('/concert-bg.jpg'); /* <- Necesitas subir esta imagen */
+  background-size: cover;
+  background-position: bottom center; /* Asegura que la parte del concierto se vea */
+  opacity: 0.6; /* Ajusta la opacidad según la imagen */
+}
+
+/* Imagen de fondo superior (fibras ópticas) */
+.backgroundImageTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%; /* Ocupa la parte superior de la sección */
+  z-index: -1;
+  background-image: url('/fibra-optica-top.jpg'); /* <- Necesitas subir esta imagen */
+  background-size: cover;
+  background-position: center top; /* Asegura que la parte de las fibras se vea */
+  opacity: 0.2; /* Ajusta la opacidad para que sea sutil */
+}
+
+
+.contentOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: -0; /* Ajusta el z-index para que esté entre las imágenes y el contenido */
+  background: linear-gradient(to bottom, rgba(6, 23, 41, 0.7), rgba(6, 23, 41, 0.95)); /* Degradado más oscuro abajo */
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Centra el wrapper horizontalmente */
+  padding: 56px 16px 72px;
+  text-align: left; /* Alinea el texto a la izquierda */
+  position: relative; /* Para que esté por encima de las capas de fondo */
+  z-index: 1;
+}
+
+.sectionTitle {
+  font-size: clamp(2.4rem, 5vw, 4.2rem); /* Ajustado para ser más grande */
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .35);
+  margin-bottom: 24px; /* Más espacio */
+}
+
+.sectionSubtitle {
+  max-width: 900px;
+  font-size: clamp(1.05rem, 1.8vw, 1.3rem); /* Subtítulo más grande */
+  color: #cfe3ff;
+  margin: 0 0 40px 0; /* Espacio y sin centrar */
+  line-height: 1.6;
+}
+
+.featuresList { /* Renombrado de servicesList a featuresList para mayor claridad */
+  list-style: none;
+  padding: 0;
+  display: flex; /* Flexbox para los checkboxes */
+  flex-direction: column;
+  gap: 15px;
+  color: #eaf2ff;
+  max-width: 800px; /* Ancho máximo para el texto */
+}
+
+.featuresList li {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  font-size: 1.1rem; /* Tamaño de texto de los puntos */
+  font-weight: 500;
+}
+
+.checkIcon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px; /* Asegura que el ícono no se achique */
+  background-color: #0d9488; /* Color del tick */
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.9em;
 }
 
 /* ===== Contacto ===== */
-.contactSection{ background:#061729; padding:56px 16px 80px; border-top:1px solid rgba(255,255,255,.06); }
-.contactContent{ max-width:1200px; margin:0 auto; }
-.contactTitle{ font-size:clamp(1.6rem, 3.2vw, 2.4rem); font-weight:800; margin-bottom:6px; }
-.contactDescription{ color:#cfe3ff; }
-.contactDetails{ margin-top:12px; display:grid; gap:6px; }
-.contactLink{ color:#9cd1ff; text-decoration:underline; text-underline-offset:3px; }
+.contactSection {
+  background: #061729;
+  padding: 56px 16px 80px;
+  border-top: 1px solid rgba(255, 255, 255, .06);
+  text-align: center;
+}
+
+.contactContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contactTitle {
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.contactDescription {
+  color: #cfe3ff;
+}
+
+.contactDetails {
+  margin-top: 12px;
+  display: grid;
+  gap: 6px;
+  place-items: center;
+}
+
+.contactLink {
+  color: #9cd1ff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 /* ===== Breakpoint ===== */
-@media (min-width:768px){
-  .navDesktop{ display:flex; }
-  .burger{ display:none; }
-  .navMobile{ display:none !important; }
+@media (min-width:768px) {
+  .navDesktop {
+    display: flex;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .navMobile {
+    display: none !important;
+  }
 }
