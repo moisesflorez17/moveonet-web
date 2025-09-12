@@ -32,17 +32,19 @@ export default function ServiciosPage() {
       </header>
 
       {/* CONTENIDO DE LA PÁGINA DE SERVICIOS */}
-      <section className={styles.hero}>
-        <div className={styles.heroOverlay} />
-        <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Nuestros Servicios de Conectividad</h1>
-          <p className={styles.heroDescription}>
+      <section className={styles.contentSection}>
+        <div className={styles.backgroundImageBottom} />
+        <div className={styles.backgroundImageTop} />
+        <div className={styles.contentOverlay} />
+        <div className={styles.contentWrapper}>
+          <h1 className={styles.sectionTitle}>Nuestros Servicios de Conectividad</h1>
+          <p className={styles.sectionSubtitle}>
             En Moveonet, diseñamos e implementamos soluciones de conectividad robustas y escalables para empresas, eventos y el sector inmobiliario. Nos especializamos en redes de alta velocidad, garantizando una conexión fiable y segura en todo momento.
           </p>
 
-          <ul className={styles.heroList}>
+          <ul className={styles.featuresList}>
             <li>
-              <span>✓</span>
+              <span className={styles.checkIcon}>✓</span>
               <span>
                 **Redes de Fibra Óptica GPON**
                 <br />
@@ -50,7 +52,7 @@ export default function ServiciosPage() {
               </span>
             </li>
             <li>
-              <span>✓</span>
+              <span className={styles.checkIcon}>✓</span>
               <span>
                 **Conectividad Temporal para Eventos**
                 <br />
@@ -58,7 +60,7 @@ export default function ServiciosPage() {
               </span>
             </li>
             <li>
-              <span>✓</span>
+              <span className={styles.checkIcon}>✓</span>
               <span>
                 **Soluciones de Conectividad para Infraestructura**
                 <br />
@@ -66,7 +68,7 @@ export default function ServiciosPage() {
               </span>
             </li>
             <li>
-              <span>✓</span>
+              <span className={styles.checkIcon}>✓</span>
               <span>
                 **Interconexión de Oficinas y Puntos de Venta**
                 <br />
