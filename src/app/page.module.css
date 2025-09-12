@@ -126,8 +126,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   isolation: isolate;
   background: #061729;
@@ -169,14 +169,15 @@
 .contentWrapper {
   width: 100%;
   max-width: 1200px;
-  margin: 100px auto 0; /* <-- CAMBIADO, esto subirá el cuadro */
-  padding: 40px;
+  margin: 0 auto;
+  padding: 56px 16px 72px;
   text-align: left;
   position: relative;
   z-index: 1;
 
   /* ----- NUEVOS ESTILOS PARA "ENCUADRAR" EL TEXTO ----- */
-  background: rgba(255, 255, 255, 0.05);
+  /* Eliminamos el background sólido y solo usamos un filtro */
+  padding: 40px;
   backdrop-filter: blur(5px);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
