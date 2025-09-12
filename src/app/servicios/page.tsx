@@ -9,7 +9,7 @@ export default function ServiciosPage() {
 
   return (
     <main className={styles.main}>
-      {/* HEADER - Reutilizamos el mismo de la página de inicio */}
+      {/* HEADER */}
       <header className={styles.header}>
         <div className={styles.headerContent}>
           <a href="/" className={styles.logoLink} aria-label="Inicio Moveo Net SAS">
@@ -22,7 +22,6 @@ export default function ServiciosPage() {
               className={styles.logoImage}
             />
           </a>
-
           <nav className={styles.navDesktop} aria-label="Principal">
             <a href="/servicios" className={styles.navLink}>Servicios</a>
             <a href="/#contacto" className={styles.navLink}>Contacto</a>
@@ -30,11 +29,14 @@ export default function ServiciosPage() {
           </nav>
         </div>
       </header>
-
-      {/* CONTENIDO DE LA PÁGINA DE SERVICIOS */}
+      
+      {/* SECCIÓN PRINCIPAL CON IMÁGENES SUPERPUESTAS */}
       <section className={styles.contentSection}>
+        {/* Capa de fondo con imagen del concierto */}
         <div className={styles.backgroundImageBottom} />
+        {/* Capa de fondo con imagen de fibras ópticas */}
         <div className={styles.backgroundImageTop} />
+        {/* Capa de degradado oscuro */}
         <div className={styles.contentOverlay} />
         <div className={styles.contentWrapper}>
           <h1 className={styles.sectionTitle}>Nuestros Servicios de Conectividad</h1>
