@@ -126,7 +126,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-start; /* <-- CAMBIO CLAVE AQUÍ */
   align-items: flex-start;
   overflow: hidden;
   isolation: isolate;
