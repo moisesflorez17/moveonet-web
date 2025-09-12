@@ -172,8 +172,17 @@
   margin: 0 auto;
   padding: 56px 16px 72px;
   text-align: left;
-  position: relative;
+  position: absolute; /* <-- CAMBIADO */
   z-index: 1;
+  top: 100px; /* <-- CAMBIADO, ahora se ubica a 100px del borde superior */
+  left: 50%; /* <-- CAMBIADO, para centrar horizontalmente */
+  transform: translateX(-50%); /* <-- CAMBIADO, para un centrado perfecto */
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .sectionTitle {
